@@ -22,7 +22,7 @@ function matrix.getLength(Matrix)
     return length
 end
 
-function matrix.Print(Matrix)
+function matrix.print(Matrix)
     length={0,0}
     length=matrix.getLength(Matrix)
     m=length[1]

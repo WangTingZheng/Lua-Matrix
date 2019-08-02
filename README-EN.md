@@ -13,9 +13,20 @@ found one of the path as your lua module path
 - new a lua file as your lua project file:
   
 ```lua
-Matrix=require("matrix")
+mym=require("matrix")
+t=mym.init(3,2,1)
+mym.print(t)
 ```
-use `Matrix.functionName` to call the function
+use `modulename.functionName` to call the function
+- modulename：the name of module，your can get it though `require("matrix")` return value
+- functionname：the name of function which you need to call
+the result:
+```
+11
+11
+11
+```
+**Play attention: don't use `Matrix` or `matrix` as your module name.**
 ## function list
 - init: to create a new matrix
 - getLength: to get the length of a matrix
