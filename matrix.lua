@@ -7,7 +7,7 @@ function matrix.init(m,n)
     for i=1,m do
         Matrix[i]={}
         for j=1,n do
-            Matrix[i][j]=0
+            Matrix[i][j]=1
         end
     end
     return Matrix
@@ -28,11 +28,10 @@ function matrix.Print(Matrix)
     m=length[1]
     n=length[2]
     for i=1,m do
-        Matrix[i]={}
         for j=1,n do
-            print(Matrix[i][j])
+            io.write(Matrix[i][j])
         end
-        print("\n")
+        print("")
     end
 end
 
