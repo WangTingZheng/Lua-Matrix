@@ -1,5 +1,5 @@
 # Lua-Matrix 
-[English](./README-EN.md)
+[English](./README-EN.md) 本项目是我练习lua的项目，bug多，不完整，只想要使用的同学推荐这个[项目](https://github.com/davidm/lua-matrix)
 ## 用法
 - 安装 [lua](https://github.com/lua/lua/releases)
 - 安装vscode或其它lua编辑器

@@ -1,4 +1,5 @@
 # Lua-Matrix
+This project is for practicing, if you only want to use, i highly recommand this [project](https://github.com/davidm/lua-matrix)
 ## usage
 - install [lua](https://github.com/lua/lua/releases)
 - install vscode or other lua editor
