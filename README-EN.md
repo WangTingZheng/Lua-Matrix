@@ -5,6 +5,7 @@ This project is for practicing, if you only want to use, i highly recommand this
 - install vscode or other lua editor
 - if you use vscode as your editor, you can download this Plug-in called [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) to run lua code
 - found your lua module path
+
 new a lua file to see the result:
 
 ```lua
@@ -26,7 +27,8 @@ mym.print(t)
 use `modulename.functionName` to call the function
 - modulename：the name of module，your can get it though `require("matrix")` return value
 - functionname：the name of function which you need to call
-the result:
+
+after running the code, the result should be:
 ```
 11
 11

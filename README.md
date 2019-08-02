@@ -5,6 +5,7 @@
 - 安装vscode或其它lua编辑器
 - 如果你使用的是vscode，请下载这个叫[Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)的插件来运行lua程序
 - 找到你lua的模块地址
+  
 新建一个lua文档来查看运行结果:
 
 ```lua
@@ -26,7 +27,8 @@ mym.print(t)
 使用 `modulename.functionName` 的格式去调用模块中的函数
 - modulename：模块名，通过`require("matrix")`来返回
 - functionname：库中的函数名，你要调用的函数
-运行结果为：
+
+在运行完代码之后，运行结果应当为：
 ```
 11
 11
