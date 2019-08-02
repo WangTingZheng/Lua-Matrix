@@ -2,12 +2,12 @@ matrix ={}
 --create a matrix
 --m n :the length of matrix
 -- return Matrix :the matrix which is created 
-function matrix.init(m,n)
+function matrix.init(m,n,value)
     Matrix={}
     for i=1,m do
         Matrix[i]={}
         for j=1,n do
-            Matrix[i][j]=1
+            Matrix[i][j]=value
         end
     end
     return Matrix
@@ -104,7 +104,7 @@ end
 function matrix.transposition(Matrix)
     length={}
     length=matrix.getLength(Matrix)
-    MatrixT=matrix.init(length[2],length[1])
+    MatrixT=matrix.init(length[2],length[1],1)
     for i=1,length[2] do
         for j=1,length[1] do
             MatrixT[i][j]=Matrix[j][i]
@@ -115,7 +115,7 @@ end
 
 function matrix.inverse(Martrix)
     length=martrix.getLength(Martrix)
-    MartrixI=martrix.init(length[1],length[2])
+    MartrixI=martrix.init(length[1],length[2],1)
     for i=1,m do
         for j=1,n do
             MartrixI[i][j]=-1*Martrix[i][j]
@@ -126,7 +126,7 @@ end
 
 function matrix.scalarMultiply(number,Martrix)
     length=getLength(Martrix)
-    MartriSM=martrix.init(length[1],length[2])
+    MartriSM=martrix.init(length[1],length[2],1)
     for i=1,length[1] do
         for j=1,length[2] do
             MatrixSM[i][j]=number*Martrix[i][j]
