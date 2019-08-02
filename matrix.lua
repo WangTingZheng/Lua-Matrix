@@ -2,12 +2,12 @@ matrix ={}
 --create a matrix
 --m n :the length of matrix
 -- return Matrix :the matrix which is created 
-function matrix.init(m,n)
+function matrix.init(m,n,value)
     Matrix={}
     for i=1,m do
         Matrix[i]={}
         for j=1,n do
-            Matrix[i][j]=1
+            Matrix[i][j]=value
         end
     end
     return Matrix
@@ -22,7 +22,7 @@ function matrix.getLength(Matrix)
     return length
 end
 
-function matrix.Print(Matrix)
+function matrix.print(Matrix)
     length={0,0}
     length=matrix.getLength(Matrix)
     m=length[1]
@@ -87,7 +87,7 @@ function  matrix.multiply(MatrixO,MatrixT)
         print("These two matrices cannot be multiplied.")
         return 0
     end
-    MartrixR =matrix.init(lengthO[1],lengthT[2])
+    MartrixR =matrix.init(lengthO[1],lengthT[2],1)
     for i=1,lengthO[1] do
         for j=1,lengthT[2] do
             for a=1,lengthO[2] do
@@ -104,7 +104,7 @@ end
 function matrix.transposition(Matrix)
     length={}
     length=matrix.getLength(Matrix)
-    MatrixT=matrix.init(length[2],length[1])
+    MatrixT=matrix.init(length[2],length[1],1)
     for i=1,length[2] do
         for j=1,length[1] do
             MatrixT[i][j]=Matrix[j][i]
@@ -115,7 +115,7 @@ end
 
 function matrix.inverse(Martrix)
     length=martrix.getLength(Martrix)
-    MartrixI=martrix.init(length[1],length[2])
+    MartrixI=martrix.init(length[1],length[2],1)
     for i=1,m do
         for j=1,n do
             MartrixI[i][j]=-1*Martrix[i][j]
@@ -125,14 +125,31 @@ function matrix.inverse(Martrix)
 end
 
 function matrix.scalarMultiply(number,Martrix)
-    length=getLength(Martrix)
-    MartriSM=martrix.init(length[1],length[2])
+    length=matrix.getLength(Martrix)
+    MartriSM=martrix.init(length[1],length[2],1)
     for i=1,length[1] do
         for j=1,length[2] do
             MatrixSM[i][j]=number*Martrix[i][j]
         end
     end
     return MartriSM
+end
+
+function matrix.compare(MatrixO,MatrixT)
+    lengthO=matrix.getLength(MatrixO)
+    lengthT=matrix.getLength(MatrixT)
+    if lengthO[1]~=lengthT[1] or lengthO[2]~=lengthT[2] then
+        return false
+    else
+        for i=1,lengthO[1] do
+            for j=1,lengthO[2] do
+                if MatrixO[i][j]~=MatrixT[i][j] then
+                    return false
+                end
+            end
+        end
+        return true
+    end
 end
 
 return matrix
