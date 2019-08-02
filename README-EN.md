@@ -8,6 +8,10 @@ new a lua file to see the result:
 ```lua
 print(package.path)
 ```
+this is my path:
+```
+;.\?.lua;C:\Program Files (x86)\Lua\5.1\lua\?.lua;C:\Program Files (x86)\Lua\5.1\lua\?\init.lua;C:\Program Files (x86)\Lua\5.1\?.lua;C:\Program Files (x86)\Lua\5.1\?\init.lua;C:\Program Files (x86)\Lua\5.1\lua\?.luac;.\?.lua;C:\Program Files (x86)\Lua\5.1\lua\?.lua;C:\Program Files (x86)\Lua\5.1\lua\?\init.lua;C:\Program Files (x86)\Lua\5.1\?.lua;C:\Program Files (x86)\Lua\5.1\?\init.lua;;D:\Lua\5.1\lua\?.luac
+```
 found one of the path as your lua module path
 - move the `matrix.lua` to your path
 - new a lua file as your lua project file:
@@ -28,12 +32,12 @@ the result:
 ```
 **Play attention: don't use `Matrix` or `matrix` as your module name.**
 ## function list
-- init: to create a new matrix
-- getLength: to get the length of a matrix
-- Print: output a matrix
-- add: add two matrices together
-- subtract: abstract two matrices together
-- multiply: multiply two matrices together
-- transposition: transpose a matrix
-- inverse: inverse a matrix
-- scalarMultiply: scalar multiply a number with a matrix
+- `init:` to create a new matrix
+- `getLength:` to get the length of a matrix
+- `Print:` output a matrix
+- `add:` add two matrices together
+- `subtract:` abstract two matrices together
+- `multiply:` multiply two matrices together
+- `transposition:` transpose a matrix
+- `inverse:` inverse a matrix
+- `scalarMultiply:` scalar multiply a number with a matrix

@@ -9,6 +9,10 @@
 ```lua
 print(package.path)
 ```
+以下是我的路径：
+```
+;.\?.lua;C:\Program Files (x86)\Lua\5.1\lua\?.lua;C:\Program Files (x86)\Lua\5.1\lua\?\init.lua;C:\Program Files (x86)\Lua\5.1\?.lua;C:\Program Files (x86)\Lua\5.1\?\init.lua;C:\Program Files (x86)\Lua\5.1\lua\?.luac;.\?.lua;C:\Program Files (x86)\Lua\5.1\lua\?.lua;C:\Program Files (x86)\Lua\5.1\lua\?\init.lua;C:\Program Files (x86)\Lua\5.1\?.lua;C:\Program Files (x86)\Lua\5.1\?\init.lua;;D:\Lua\5.1\lua\?.luac
+```
 找一个路径作为你lua模块的路径
 - 把 `matrix.lua` 移到你的路径对应的文件夹
 - 新建一个新的lua文档来作为你的项目:
@@ -28,13 +32,13 @@ mym.print(t)
 11
 ```
 **注意：千万不要使用matrix或者Matrix来作为模块名称，会报错**
-## function list
-- init: 新建一个矩阵
-- getLength: 取得矩阵的长度信息
-- Print: 输出矩阵
-- add: 把两个矩阵相加
-- subtract: 把两个矩阵相减
-- multiply: 把两个矩阵相乘
-- transposition: 转置一个矩阵
-- inverse: 取反一个矩阵
-- scalarMultiply: 把一个数和一个矩阵进行数乘
+## 函数列表
+- `init:` 新建一个矩阵
+- `getLength:` 取得矩阵的长度信息
+- `Print:` 输出矩阵
+- `add:` 把两个矩阵相加
+- `subtract:` 把两个矩阵相减
+- `multiply:` 把两个矩阵相乘
+- `transposition:` 转置一个矩阵
+- `inverse:` 取反一个矩阵
+- `scalarMultiply:` 把一个数和一个矩阵进行数乘
