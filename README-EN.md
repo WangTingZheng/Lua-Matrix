@@ -6,14 +6,14 @@
 new a lua file to see the result:
 
 ```lua
-    print(package.path)
+print(package.path)
 ```
 found one of the path as your lua module path
 - move the `matrix.lua` to your path
 - new a lua file as your lua project file:
   
 ```lua
-    Matrix=require("matrix")
+Matrix=require("matrix")
 ```
 use `Matrix.functionName` to call the function
 ## function list
