@@ -34,12 +34,12 @@ the result:
 ```
 **Play attention: don't use `Matrix` or `matrix` as your module name.**
 ## function list
-- `init:` to create a new matrix
-- `getLength:` to get the length of a matrix
-- `Print:` output a matrix
-- `add:` add two matrices together
-- `subtract:` abstract two matrices together
-- `multiply:` multiply two matrices together
-- `transposition:` transpose a matrix
-- `inverse:` inverse a matrix
-- `scalarMultiply:` scalar multiply a number with a matrix
+- `matrix.init:` to create a new matrix
+- `matrix.getLength:` to get the length of a matrix
+- `matrix.print:` output a matrix
+- `matrix.add:` add two matrices together
+- `matrix.subtract:` abstract two matrices together
+- `matrix.multiply:` multiply two matrices together
+- `matrix.transposition:` transpose a matrix
+- `matrix.inverse:` inverse a matrix
+- `matrix.scalarMultiply:` scalar multiply a number with a matrix

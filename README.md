@@ -34,12 +34,12 @@ mym.print(t)
 ```
 **注意：千万不要使用matrix或者Matrix来作为模块名称，会报错**
 ## 函数列表
-- `init:` 新建一个矩阵
-- `getLength:` 取得矩阵的长度信息
-- `Print:` 输出矩阵
-- `add:` 把两个矩阵相加
-- `subtract:` 把两个矩阵相减
-- `multiply:` 把两个矩阵相乘
-- `transposition:` 转置一个矩阵
-- `inverse:` 取反一个矩阵
-- `scalarMultiply:` 把一个数和一个矩阵进行数乘
+- `matrix.init:` 新建一个矩阵
+- `matrix.getLength:` 取得矩阵的长度信息
+- `matrix.print:` 输出矩阵
+- `matrix.add:` 把两个矩阵相加
+- `matrix.subtract:` 把两个矩阵相减
+- `matrix.multiply:` 把两个矩阵相乘
+- `matrix.transposition:` 转置一个矩阵
+- `matrix.inverse:` 取反一个矩阵
+- `matrix.scalarMultiply:` 把一个数和一个矩阵进行数乘
