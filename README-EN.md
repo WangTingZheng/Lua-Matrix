@@ -3,6 +3,7 @@ This project is for practicing, if you only want to use, i highly recommand this
 ## usage
 - install [lua](https://github.com/lua/lua/releases)
 - install vscode or other lua editor
+- if you use vscode as your editor, you can download this Plug-in called [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) to run lua code
 - found your lua module path
 new a lua file to see the result:
 
