@@ -1,4 +1,4 @@
-# Lua-Matrix [English](./README.md)
+# Lua-Matrix [English](./README-En.md)
 ## 用法
 - 安装 [lua](https://github.com/lua/lua/releases)
 - 安装vscode或其它lua编辑器
